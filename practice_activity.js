@@ -8,7 +8,7 @@ var firebaseConfig = {
   appId: "1:1074863772693:web:3a7eeb630fbaf989ddaa1c"
 };
 firebase.initializeApp(firebaseConfig);
-funciton addUser() {
+function addUser() {
   user_name=document.getElementById("user_name").value;
   firebase.database().ref("/").child(user_name).update({
   purpose:"adding user"
