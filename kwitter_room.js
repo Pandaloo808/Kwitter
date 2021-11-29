@@ -1,4 +1,4 @@
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyBrSjBmqHz_snlAMVegNgHyr95A54JkjoM",
   authDomain: "doc-is-home.firebaseapp.com",
   databaseURL: "https://doc-is-home-default-rtdb.firebaseio.com",
@@ -9,7 +9,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 function getData() { 
   firebase.database().ref("/").on('value', function(snapshot) 
   { document.getElementById("output").innerHTML = ""; 
