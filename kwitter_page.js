@@ -17,7 +17,7 @@ function send(){
     message:msg,
     like:0
   });
-  document.getElementVyId("msg").value="";
+  document.getElementById("msg").value="";
 }
 function logout(){
   localStorage.removeItem("user_name");
